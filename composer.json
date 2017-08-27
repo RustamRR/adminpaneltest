@@ -1,0 +1,37 @@
+{
+    "name": "zendframework/skeleton-application",
+    "description": "Skeleton Application for ZF2",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "framework",
+        "zf2"
+    ],
+    "homepage": "http://framework.zend.com/",
+    "require": {
+        "php": ">=5.5",
+        "zendframework/zendframework": "2.*",
+        "zf-commons/zfc-rbac": "~2.0",
+        "widmogrod/zf2-assetic-module": "1.6.0",
+        "doctrine/dbal": "2.*",
+        "doctrine/doctrine-orm-module": "0.*",
+        "doctrine/migrations": "^1.2",
+        "doctrine/data-fixtures": "*",
+        "zf-commons/zfc-base": "0.1.2",
+
+        "newtonsnerds/goalio-rememberme": "1.*"
+    },
+    "require-dev": {
+        "ext-curl": "*",
+        "fabpot/php-cs-fixer": "1.9.1",
+        "phpunit/phpunit": "4.7.7"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "sh bin/classmap_gen.sh",
+        ],
+        "post-update-cmd": [
+            "sh bin/classmap_gen.sh",
+        ]
+    }
+
+}
