@@ -28,9 +28,11 @@
     "scripts": {
         "post-install-cmd": [
             "sh bin/classmap_gen.sh",
+            "sh bin/templatemap_gen.sh"
         ],
         "post-update-cmd": [
             "sh bin/classmap_gen.sh",
+            "sh bin/templatemap_gen.sh"
         ]
     }
 
